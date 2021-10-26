@@ -1,2 +1,2 @@
-# Suunnittelumallit kurrsin tehtäviä
-Jüri Tihane
+# Suunnittelumallit kurssin tehtäviä
+Tekijä: Jüri Tihane
