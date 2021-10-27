@@ -1,4 +1,4 @@
-package factorymethod;
+package FactoryMethod;
 
 // Jüri Tihane
 

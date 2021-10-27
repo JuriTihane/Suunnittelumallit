@@ -1,16 +1,19 @@
-package factorymethod;
+package FactoryMethod;
 
 public class Opettaja extends AterioivaOtus {
 
-    public Juoma createJuomaVesi() {
-        return new Vesi();
-    }
-
-    public Juoma createJuomaLimu() {
-        return new Limu();
-    }
-
-    public Juoma createJuomaKahvi() {
-        return new Kahvi();
+    public Juoma createJuoma(String drink) {
+        switch (drink) {
+            case "Vesi" -> {
+                return new Vesi();
+            }
+            case "Limu" -> {
+                return new Limu();
+            }
+            case "Kahvi" -> {
+                return new Kahvi();
+            }
+        }
+        return null;
     }
 }

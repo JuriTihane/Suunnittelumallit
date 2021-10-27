@@ -1,4 +1,4 @@
-package factorymethod;
+package FactoryMethod;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -6,9 +6,7 @@ public abstract class AterioivaOtus {
 
     Juoma juoma = null;
 
-    public abstract Juoma createJuomaVesi();
-    public abstract Juoma createJuomaKahvi();
-    public abstract Juoma createJuomaLimu();
+    public abstract Juoma createJuoma(String juoma);
 
     public void aterioi(@NotNull String drink) {
         switch (drink) {
@@ -32,17 +30,17 @@ public abstract class AterioivaOtus {
     }
 
     public void juoVesi() {
-        juoma = createJuomaVesi();
+        juoma = createJuoma("Vesi");
         System.out.println("Aterian jälkeen " + juoma + " tekee terää");
     }
 
     public void juoLimu() {
-        juoma = createJuomaLimu();
+        juoma = createJuoma("Limu");
         System.out.println("Aterian jälkeen " + juoma + " tekee terää");
     }
 
     public void juoKahvi() {
-        juoma = createJuomaKahvi();
+        juoma = createJuoma("Kahvi");
         System.out.println("Aterian jälkeen " + juoma + " tekee terää");
     }
 }
