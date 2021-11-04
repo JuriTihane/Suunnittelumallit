@@ -14,6 +14,11 @@ public class CPU implements Component {
 
     @Override
     public void printComponent() {
-        System.out.println("Komponentin nimi: " + name + ", hinta: " + cost);
+        System.out.println("Komponentin tyyppi: " + getClass().getSimpleName() + ", Komponentin nimi: " + name + ", hinta: " + cost);
+    }
+
+    @Override
+    public Integer getCost() {
+        return cost;
     }
 }
