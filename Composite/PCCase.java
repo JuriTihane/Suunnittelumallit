@@ -23,9 +23,21 @@ public class PCCase implements Component {
     }
 
     @Override
+    public Integer getCost() {
+        return cost;
+    }
+
+    @Override
     public void printComponent() {
         for (Component c : childComponents) {
             c.printComponent();
         }
+
+        int costSum = cost;
+        for (Component c : childComponents) {
+            costSum += c.getCost();
+        }
+        System.out.println("Komponentin tyyppi: " + getClass().getSimpleName() + ", Komponentin nimi: " + name + ", hinta: " + cost);
+        System.out.println("Kaikkien komponenttien hinnat yhteensä: " + costSum);
     }
 }
