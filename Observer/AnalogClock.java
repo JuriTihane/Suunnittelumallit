@@ -8,7 +8,7 @@ public class AnalogClock implements Observer {
 
     public AnalogClock(ClockTimer ct) {
         timer = ct;
-        timer.addObserver((Observer) this);
+        timer.addObserver(this);
     }
 
     @Override
@@ -18,6 +18,6 @@ public class AnalogClock implements Observer {
     }
 
     private void draw() {
-        System.out.println(timer.getHour() + ":" + timer.getMinute() + ":" + timer.getSecond());
+        System.out.println("Hour: " + timer.getHour() + ", minute: " + timer.getMinute() + ", second: " + timer.getSecond());
     }
 }

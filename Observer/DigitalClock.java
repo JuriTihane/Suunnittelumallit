@@ -18,6 +18,6 @@ public class DigitalClock implements Observer {
     }
 
     private void draw() {
-        System.out.println(timer.getHour() + ":" + timer.getMinute() + ":" + timer.getSecond());
+        System.out.println("Hour: " + timer.getHour() + ", minute: " + timer.getMinute() + ", second: " + timer.getSecond());
     }
 }
