@@ -1,5 +1,6 @@
 package Observer;
 
+import java.util.List;
 import java.util.Observable;
 
 public class ClockTimer extends Observable {
@@ -35,5 +36,7 @@ public class ClockTimer extends Observable {
                 }
             }
         }
+        this.setChanged();
+        this.notifyObservers(new int[] {second, minute, hour});
     }
 }

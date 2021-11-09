@@ -13,11 +13,11 @@ public class AnalogClock implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        timer.tick();
-        draw();
+        draw((int[]) arg);
     }
 
-    private void draw() {
-        System.out.println("Hour: " + timer.getHour() + ", minute: " + timer.getMinute() + ", second: " + timer.getSecond());
+    private void draw(int[] t) {
+//        System.out.println("Hour: " + timer.getHour() + ", minute: " + timer.getMinute() + ", second: " + timer.getSecond());
+        System.out.println("Hour: " + t[2] + " Minute: " + t[1] + " Second: " + t[0]);
     }
 }

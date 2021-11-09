@@ -10,17 +10,15 @@ public class MainObserver {
         DigitalClock digitalClock = new DigitalClock(timer);
 
         // TODO: OTA KOMMENTIN POISS TÄSTÄ BLOKISTA, JOS HALUAT NÄHDÄ REAALIAJASSA
-//        Timer t = new Timer();
-//        t.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                analogClock.update(timer, analogClock);
-//            }
-//        }, 0, 1000);
+        Timer t = new Timer();
+        t.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                timer.tick();
+            }
+        }, 0, 1000);
 
         // Simulointi, vaihda argumenttia jos haluat vaihtaa simuloinnin aikaa, tunnit jatkuvat loputtomiin
-        while (timer.getHour() != 1) {
-            analogClock.update(timer, analogClock);
-        }
+
     }
 }
