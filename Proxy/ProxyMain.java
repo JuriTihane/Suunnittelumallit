@@ -15,7 +15,7 @@ public class ProxyMain {
             image.showData();
         }
 
-        // Esitys valokuvien selaamisesta, tarvitsisi pikkasen enemmän logiikka, mutta näin se onnistuu
+        // Esitys valokuvien selaamisesta, jos lisäät vielä yhden rivin image.displayImage() niin huomaat, ettei se lada sitä uudestaan.
         System.out.println("Display images");
         for (Image image : images) {
             image.displayImage();
