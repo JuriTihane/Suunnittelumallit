@@ -6,15 +6,15 @@ public class PrototypeMain {
         Kello kopio = (Kello) kello.klooni();
         Kello syva = kello.syvaKopio();
 
-        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syvkopio:" + syva.aika());
+        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syväkopio:" + syva.aika());
 
         kello.asetaAika(14, 30);
-        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syvkopio:" + syva.aika());
+        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syväkopio:" + syva.aika());
 
         kopio.asetaAika(22, 10);
-        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syvkopio :" + syva.aika());
+        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syväkopio :" + syva.aika());
 
         syva.asetaAika(2, 58);
-        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syvkopio :" + syva.aika());
+        System.out.println("Kello:" + kello.aika() + " Kopio:" + kopio.aika() + " Syväkopio :" + syva.aika());
     }
 }
