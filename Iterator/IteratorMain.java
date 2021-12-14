@@ -27,6 +27,7 @@ public class IteratorMain {
         Iterator<String> iterator = collection.iterator();
         Iterator<String> iterator2 = collection.iterator();
 
+        // Vaihda swtichin parametri eri skenaarioita varten
         switch (1) {
             // Kaksi iteraattoria
             case 1:
